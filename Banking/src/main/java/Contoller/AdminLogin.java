@@ -17,7 +17,7 @@ public class AdminLogin extends HttpServlet {
 			res.getWriter().print("<h1>Welcome to Admin Login Page<h1>");
 
 		} else {
-			res.getWriter().print("<h1>Incorrect Username or Password<h1>");
+			res.getWriter().print("<h1>Sahi Password Daal na Yaar<h1>");
 			req.getRequestDispatcher("admin.html").include(req, res);
 
 		}
