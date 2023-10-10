@@ -1,5 +1,7 @@
 package DAO;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -17,6 +19,13 @@ public class Bank_Dao {
 		et.begin();
 		em.persist(bankaccount);
 		et.commit();
+	}
+
+	public List<BankAccount> fetchAllBank() {
+
+		List<BankAccount> list = em.createQuery("select x from BankAccount x").getResultList();
+		return list;
+
 	}
 
 }
