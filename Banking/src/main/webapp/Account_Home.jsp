@@ -11,7 +11,7 @@
 <body>
 <h1>Welcome To Account Home</h1>
 <% List<BankAccount> list=(List<BankAccount>)request.getSession().getAttribute("list"); %>
-<table border="1">
+<table border="1" cellspacing="0">
 <tr>
 <th>Account_Number</th>
 <th>Account_Type</th>
@@ -29,9 +29,9 @@
 <th><%=bankaccount.getAmount() %></th>
 <th><%=bankaccount.getAccountLimit() %></th>
 <th><%=bankaccount.isStatus() %></th>
-
 <th><%=bankaccount.getCustomer().getName() %></th>
 <th><%=bankaccount.getCustomer().getCustid()%></th>
+<th><a href="changstatus?accno"=<%= bankaccount.getAccountNo() %>></a> Change_Status</th>
 <th>Change_Status</th>
 
 <%}%>
