@@ -28,4 +28,17 @@ public class Bank_Dao {
 
 	}
 
+	public BankAccount fetchByAccno(long accno) {
+		BankAccount bankaccount = em.find(BankAccount.class, accno);
+		return bankaccount;
+
+	}
+
+	public void update(BankAccount bankaccount) {
+		et.begin();
+		em.merge(bankaccount);
+		et.commit();
+
+	}
+
 }
