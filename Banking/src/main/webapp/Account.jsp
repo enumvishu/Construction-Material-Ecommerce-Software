@@ -22,20 +22,8 @@
 <%}else{ %>
 
 <% for(BankAccount bankaccount:list) {%>
-	
-
 <a href="setactiveaccount?acno=<%=bankaccount.getAccountNo() %>"><button><%= bankaccount.getAccountNo()%></button></a>
-
-
-
-
-
-
-
-
-
-
-
+	
 	<%} %>
 	<% }%>
 

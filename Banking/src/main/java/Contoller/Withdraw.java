@@ -26,12 +26,13 @@ public class Withdraw extends HttpServlet {
 		BankAccount bankaccount = bankdao.fetchByAccno(acno);
 
 		if (bankaccount.getAmount() < amount) {
-			res.getWriter().print("<h1>Insufficient Balance</h1>");
+			res.getWriter().print("<h1>Insufficient Balance. Your actual balance is</h1>" + bankaccount.getAmount());
 
 		} else {
 
 			if (amount > bankaccount.getAccountLimit()) {
-				res.getWriter().print("<h1>Limit Excedded</h1>");
+				res.getWriter().print("<h1>Limit Excedded. Your Actual limit is </h1>" + bankaccount.getAccountLimit());
+
 			} else {
 
 				bankaccount.setAmount(bankaccount.getAmount() - amount); // before putting any data inside database we should set the data
