@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Withdraw Page</title>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #0074d9; /* Change the color as desired */
+        }
+        
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            max-width: 400px;
+            background: #f7f7f7;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background: #0074d9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background: #ccc;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+	
+	<h1>Welcome to WIthdrawal Page</h1>
+	
+	 <form action="withdraw" method="post">
+        <label for="amount">Withdraw Amount:</label>
+        <input type="text" name="amount" id="amount" placeholder="Enter Amount">
+        <br><br>
+        <button type="submit">Withdraw</button>
+        <button type="reset">Cancel</button>
+    </form>
+
+</body>
+</html>

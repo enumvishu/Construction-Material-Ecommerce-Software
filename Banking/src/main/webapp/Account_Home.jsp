@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>Welcome To Account Home</h1>
-<% List<BankAccount> list=(List<BankAccount>)request.getSession().getAttribute("list"); %>
+<% List<BankAccount> list=(List<BankAccount>)request.getSession().getAttribute("list"); %>   
 <table border="1" cellspacing="0" style="width:90%">
 <tr>
 <th>Account_Number</th>
