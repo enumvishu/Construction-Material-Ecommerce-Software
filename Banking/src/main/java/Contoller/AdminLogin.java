@@ -27,7 +27,7 @@ public class AdminLogin extends HttpServlet {
 			req.getRequestDispatcher("Account_Home.jsp").include(req, res);
 
 		} else {
-			res.getWriter().print("<h1>Sahi Password Daal na Yaar<h1>");
+			res.getWriter().print("<h1>Invalid Credentials<h1>");
 			req.getRequestDispatcher("admin.html").include(req, res);
 
 		}
