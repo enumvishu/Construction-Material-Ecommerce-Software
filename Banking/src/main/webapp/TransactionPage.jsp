@@ -17,7 +17,7 @@
     text-decoration: none;
   }
   .button {
-    display: inline-block;
+    display: inline-block; 
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -37,7 +37,7 @@
 
 <a href="Deposite.html" class="button">Deposit</a>
 <a href="Withdraw.html" class="button">Withdraw</a>
-<button class="button">Check Balance</button>
+<a href="CheckBalance.html"><button class="button">Check Balance</button></a>
 <button class="button">View Transaction History</button>
 
 </body>
