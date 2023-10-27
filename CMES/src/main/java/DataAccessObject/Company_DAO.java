@@ -46,4 +46,9 @@ public class Company_DAO {
 		return list;
 	}
 
+	public Company checkbyid(long id) {
+		Company list = em.find(Company.class, id);
+		return list;
+	}
+
 }
